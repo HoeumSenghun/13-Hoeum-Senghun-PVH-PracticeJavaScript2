@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css">
     <title>Practice Java Script2</title>
 </head>
 <body>
-    
+    <main  class="p-10 bg-gray-100">
+        <h1 class="text-3xl text-center font-bold mb-10">Hello Teacher, This is our practcie3</h1>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+        <!-- add task -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-4">Add Task</h2>
+
+            <label class="block font-medium text-gray-700">Task Name</label>
+            <input type="text" placeholder="HRD Homework" class="w-full p-2 border rounded mt-1 mb-4">
+
+            <label class="block font-medium text-gray-700">Choose Date</label>
+            <div class="relative mt-1 mb-4">
+                <input type="date" class="w-full p-2 border rounded">
+            </div>
+
+            <label class="block font-medium text-gray-700">Priority</label>
+            <select name="" id="" class="'w-full p-2 border rounded mt-1 mb-4">
+                <option value="">Select Priority</option>
+                <option value="">High</option>
+                <option value="">Meduim</option>
+                <option value="">Low</option>
+            </select>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded block">Add New Task</button>
+
+        </div>
+        <!-- task list table -->
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-semibold">Task List</h2>
+            <table>
+                <tr>
+                    <th>TASK NAME</th>
+                    <th>DUE DATE</th>
+                    <th>PRIORITY</th>
+                    <th>STATUS</th>
+                </tr>
+                <tr>
+                    <td>Complete JavaScript Project</td>
+                    <td>2023/12/01</td>
+                    <td>HHigh</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Reciew Team Documentation</td>
+                    <td>2023/12/03</td>
+                    <td>Medium</td>
+                    <td>Pending</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </main>
 </body>
 </html>
