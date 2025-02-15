@@ -16,6 +16,9 @@ function addTask() {
         return;
     }
 
+    //fomart date mm/dd/yyyy
+    const formattedDate = fomartDate(taskDate);
+
     //create a new row
     const newRow = document.createElement("tr");
     newRow.classList.add("border-table");
@@ -27,7 +30,7 @@ function addTask() {
 
     const dateCell = document.createElement("td");
     dateCell.classList.add("p-3");
-    dateCell.innerHTML = taskDate;
+    dateCell.innerHTML = formattedDate;
 
     const priorityCell = document.createElement("td");
     priorityCell.classList.add("p-3", "font-bold");
@@ -73,4 +76,13 @@ function addTask() {
     document.getElementById("taskName").value = "";
     document.getElementById("taskDate").value = "";
     
+}
+
+function fomartDate(dateString) {
+    const date = new Date(dateString);
+    const month = date.getMonth() +1;
+    const day = date.getDate();
+    const year = date.getFullYear();
+
+    return `${month}/${day}/${year}`
 }
