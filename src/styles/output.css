@@ -671,8 +671,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
+  }
   .bg-yellow-600 {
     background-color: var(--color-yellow-600);
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -755,8 +761,14 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
   .text-gray-700 {
     color: var(--color-gray-700);
+  }
+  .text-green-500 {
+    color: var(--color-green-500);
   }
   .text-red-500 {
     color: var(--color-red-500);
